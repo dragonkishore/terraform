@@ -1,7 +1,7 @@
-resource "aws_ecs_service" "terraform" {
+resource "aws_ecs_service" "zupain" {
   name            = "${var.ecs_service_name}"
   cluster         = "${var.ecs_cluster_name}"
-  task_definition = "${aws_ecs_task_definition.terraform.arn}"
+  task_definition = "${aws_ecs_task_definition.zupain.arn}"
   desired_count   = 1
   ordered_placement_strategy {
   type = "spread"

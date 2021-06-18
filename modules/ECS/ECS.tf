@@ -1,6 +1,6 @@
 #Create ECS Cluster
 
-resource "aws_ecs_cluster" "terraform" {
+resource "aws_ecs_cluster" "zupain" {
   name = "${var.ecs_cluster_name}"
 
   setting {
@@ -9,5 +9,5 @@ resource "aws_ecs_cluster" "terraform" {
   }
 }
 output "clustername" {
-  value = "${aws_ecs_cluster.terraform.name}"
+  value = "${aws_ecs_cluster.zupain.name}"
 }

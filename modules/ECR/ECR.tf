@@ -1,6 +1,6 @@
 #Create ECR Repo
 
-resource "aws_ecr_repository" "terraform" {
+resource "aws_ecr_repository" "zupain" {
   name                 = "${var.ecr_name}"
   image_tag_mutability = "MUTABLE"
 

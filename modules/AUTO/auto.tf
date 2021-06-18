@@ -1,4 +1,4 @@
-resource "aws_launch_configuration" "terraform" {
+resource "aws_launch_configuration" "zupain" {
   name_prefix       = "${var.asgname}"
   image_id          = "ami-0dbd8c88f9060cf71"
   instance_type     = "${var.ecs_instance_type}"
@@ -15,10 +15,10 @@ resource "aws_launch_configuration" "terraform" {
    }
  }
 
-resource "aws_autoscaling_group" "terraform" {
-  name                 = "terraform"
+resource "aws_autoscaling_group" "zupain" {
+  name                 = "${var.asg_grp_name}"
   vpc_zone_identifier  = "${var.asg_vpc_zone_identifier}"
-  launch_configuration = aws_launch_configuration.terraform.name
+  launch_configuration = aws_launch_configuration.zupain.name
   desired_capacity     = 1
   min_size             = 1
   max_size             = 1

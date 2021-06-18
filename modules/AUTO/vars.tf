@@ -21,4 +21,4 @@ variable "asg_vpc_zone_identifier" {}
 variable "ecs_key_pair" {}
 variable "ecs_volume_type" {}
 variable "ecs_volume_size" {}
-
+variable "asg_grp_name" {}

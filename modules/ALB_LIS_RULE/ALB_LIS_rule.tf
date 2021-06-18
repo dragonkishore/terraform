@@ -1,6 +1,6 @@
 #Create ALB rules for 80
 
-resource "aws_lb_listener_rule" "terraform" {
+resource "aws_lb_listener_rule" "zupain" {
   listener_arn = "${var.listener_name}"
   priority     = "${var.rule_priority}"
 

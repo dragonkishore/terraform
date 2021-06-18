@@ -1,6 +1,6 @@
 #Create Application Load balancer
 
-resource "aws_lb" "terraform" {
+resource "aws_lb" "zupain" {
   name               = "${var.alb_name}"
   internal           = false
   load_balancer_type = "application"
@@ -10,5 +10,5 @@ resource "aws_lb" "terraform" {
 }
 
 output "alb_name" {
-  value = "${aws_lb.terraform.id}"
+  value = "${aws_lb.zupain.id}"
 }

@@ -1,4 +1,4 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "zupain" {
   count                       = "${var.ec2_count}"
   ami                         = "${var.ami_id}"
   instance_type               = "${var.instance_type}"

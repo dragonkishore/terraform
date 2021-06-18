@@ -1,6 +1,6 @@
 #Creating var.rds DB Instance
 
-resource "aws_db_instance" "terraform" {
+resource "aws_db_instance" "zupain" {
   allocated_storage       = "${var.rds_storage}"
   storage_type            = "${var.rds_storage_type}"
   engine                  = "mysql"

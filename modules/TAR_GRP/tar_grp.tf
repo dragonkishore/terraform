@@ -1,4 +1,4 @@
-resource "aws_lb_target_group" "terraform" {
+resource "aws_lb_target_group" "zupain" {
   name     = "${var.targetgrp_name}"
   port     = 80
   protocol = "HTTP"
@@ -16,5 +16,5 @@ resource "aws_lb_target_group" "terraform" {
 }
 
 output "aws_lb_target_group" {
-   value = "${aws_lb_target_group.terraform.arn}"
+   value = "${aws_lb_target_group.zupain.arn}"
 }

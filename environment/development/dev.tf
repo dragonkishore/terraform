@@ -139,6 +139,7 @@
 #  module "asg" {
 #        source                      = "../modules/AUTO"
 #        asgname                     = "terraform"
+#        asg_grp_name                = "zupain"
 #        ecs_instance_type           = "t3.micro"
 #        asg_security_groups         = "${module.sg.security_groups}"
 #        asg_vpc_zone_identifier     = ["${module.vpc.subnet_id2}","${module.vpc.subnet_id3}"]

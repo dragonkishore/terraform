@@ -1,4 +1,4 @@
-resource "aws_ecs_task_definition" "terraform" {
+resource "aws_ecs_task_definition" "zupain" {
   family = "${var.ecs_td_name}"
   #execution_role_arn = ""
   container_definitions = jsonencode([
